@@ -8,7 +8,11 @@
 
 #import "FSAudioStream.h"
 
+#ifdef COCOAPODS
+#import <Reachability/Reachability.h>
+#else
 #import "Reachability.h"
+#endif
 
 #include "audio_stream.h"
 #include "stream_configuration.h"
